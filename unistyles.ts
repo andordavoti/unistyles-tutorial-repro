@@ -20,29 +20,8 @@ const lightTheme = {
   gap: (v: number) => v * 8,
 } as const;
 
-const darkTheme = {
-  colors: {
-    background: "#221A11",
-    foreground: "#332618",
-    typography: "#FFFFFF",
-    dimmed: "#A8A198",
-    tint: "#C9AD92",
-    activeTint: "#FFFFFF",
-    link: "#0C2461",
-    accents: {
-      banana: "#f9CA24",
-      pumpkin: "#F0932B",
-      apple: "#EB4D4B",
-      grass: "#6AB04C",
-      storm: "#4834D4",
-    },
-  },
-  gap: (v: number) => v * 8,
-} as const;
-
 const appThemes = {
   light: lightTheme,
-  dark: darkTheme,
 };
 
 const breakpoints = {
@@ -62,12 +41,8 @@ declare module "react-native-unistyles" {
 }
 
 StyleSheet.configure({
-  settings: {
-    adaptiveThemes: true,
-  },
   themes: {
     light: lightTheme,
-    dark: darkTheme,
   },
   breakpoints,
 });
