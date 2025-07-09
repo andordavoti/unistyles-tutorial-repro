@@ -15,6 +15,6 @@ const styles = StyleSheet.create((theme) => ({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: theme.colors.background,
+    backgroundColor: theme.colors.background, // This line breaks the web app
   },
 }));
